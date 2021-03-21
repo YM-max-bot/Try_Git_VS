@@ -1,0 +1,9 @@
+#PBS -l walltime=72:00:00,select=1:ncpus=8:ompthreads=1:mem=8gb
+#PBS -N polynomial
+#PBS -j oe
+#PBS -J 1-3
+module load matlab/R2020a
+cd /rds/general/user/yz7219/home/Main/Try_Git_VS
+matlab -nodesktop –nodisplay -nosplash -singleCompThread < helloword.m
+exit
+
