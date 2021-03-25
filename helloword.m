@@ -20,6 +20,7 @@ cvx_begin quiet
     variable x(n)
     minimize( norm(A*x-b) )
 cvx_end
+Num_ran=100*randn(1,1)
 save(sprintf('data/data_%d.mat', iBatch));
 
 
