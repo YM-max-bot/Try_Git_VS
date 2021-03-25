@@ -10,6 +10,7 @@ set(groot, 'defaultlinelinewidth', 2);
 set(groot, 'defaultstemlinewidth', 2);
 run('/rds/general/user/yz7219/home/Main/cvx/cvx_setup.m');
 iBatch=str2double(getenv('PBS_ARRAY_INDEX'));
+rng(iBatch);
 %disp(iBatch);
 %rng(iBatch);
 % print('hello world');
